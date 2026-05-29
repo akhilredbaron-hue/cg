@@ -12,22 +12,51 @@
 </head>
 <body>
 
-  <div class="top-bar">Free shipping across India on orders above ₹999 · <a href="subscribe.html">Auto-deliver and save 15%</a></div>
-
   <header class="site-header">
-    <nav class="nav">
-      <ul class="nav-links left">
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="bundles.html">Build a Box</a></li>
-        <li><a href="subscribe.html">Subscribe</a></li>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="index.html" class="logo logo-image"><img src="assets/images/logo.png" alt="Chakki Ghar" /></a>
+      <ul class="nav-links">
+        <li class="nav-icon-item">
+          <button class="icon-btn search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </li>
+        <li class="nav-text-item"><a href="shop.html">Categories</a></li>
+        <li class="nav-text-item"><a href="shop.html">Shop</a></li>
+        <li class="nav-text-item"><a href="bundles.html">Build a Box</a></li>
+        <li class="nav-text-item"><a href="subscribe.html">Subscription</a></li>
+        <li class="nav-text-item"><a href="story.html">About Us</a></li>
+        <li class="nav-text-item"><a href="locator.html">Find Us</a></li>
+        <li class="nav-icon-item">
+          <button class="icon-btn cart-btn" aria-label="Open cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-count">0</span>
+          </button>
+        </li>
+        <li class="nav-icon-item nav-mobile-toggle">
+          <button class="mobile-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </li>
       </ul>
-      <a href="index.html" class="logo">Chakki Ghar<span class="sub deva">चक्की घर</span></a>
-      <ul class="nav-links right">
-        <li><a href="story.html">Story</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="locator.html">Find Us</a></li>
-        <li><button class="icon-btn"><span class="nav-text">Cart</span><span class="cart-count">0</span></button></li>
-        <li><button class="mobile-toggle" id="menuToggle"><span></span><span></span><span></span></button></li>
+    </nav>
+    <nav class="nav-categories" aria-label="Product categories">
+      <ul class="category-strip">
+        <li><a href="shop.html?cat=pulses">Pulses</a></li>
+        <li><a href="shop.html?cat=millet">Millet</a></li>
+        <li><a href="shop.html?cat=rice-wheat">Rice &amp; Wheat</a></li>
+        <li><a href="shop.html?cat=garam-masala">Garam Masala</a></li>
+        <li><a href="shop.html?cat=sweetener-salt">Sweetener &amp; Salt</a></li>
+        <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+        <li><a href="shop.html?cat=seeds">Seeds</a></li>
+        <li><a href="shop.html?cat=extras">Extras</a></li>
+        <li><a href="shop.html?cat=cereal-pulses">Cereal &amp; Pulses</a></li>
+        <li><a href="shop.html?cat=millets">Millets</a></li>
+        <li><a href="shop.html?cat=rock-black-salt">Rock / Black Salt</a></li>
+        <li><a href="shop.html?cat=spices">Spices</a></li>
+        <li><a href="shop.html?cat=healthy-seeds">Healthy Seeds</a></li>
+        <li><a href="shop.html?cat=basil-sabja">Basil / Sabja Seeds</a></li>
+        <li><a href="shop.html?cat=dry-fruit-nuts">Dry Fruit Nuts</a></li>
       </ul>
     </nav>
   </header>
@@ -42,39 +71,37 @@
     <div class="pdp">
       <div class="pdp-gallery reveal">
         <div class="main">
-          <div class="img-placeholder" style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg, #E8D5B0 0%, #C9A77C 100%);font-family:var(--font-display);font-style:italic;color:var(--ink);text-align:center;padding:2rem;">
-            Main image: heaped atta in linen cloth, soft daylight
-          </div>
+          <img src="assets/images/products/wheat-flour.jpg" alt="Organic Gehun Atta — Whole Wheat Flour" />
         </div>
         <div class="thumbs">
-          <div class="active"><div class="img-placeholder" style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg, #E8D5B0, #C9A77C);font-size:0.65rem;color:var(--ink);padding:0.5rem;text-align:center;">Hero</div></div>
-          <div><div class="img-placeholder" style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg, #D4B98C, #A88458);font-size:0.65rem;color:var(--paper);padding:0.5rem;text-align:center;">Grain shot</div></div>
-          <div><div class="img-placeholder" style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg, #B89568, #886236);font-size:0.65rem;color:var(--paper);padding:0.5rem;text-align:center;">Mill</div></div>
-          <div><div class="img-placeholder" style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg, #C28E2F, #8E6118);font-size:0.65rem;color:var(--paper);padding:0.5rem;text-align:center;">Pack</div></div>
+          <div class="active"><img src="assets/images/products/wheat-flour.jpg" alt="" /></div>
+          <div><img src="assets/images/products/wheat-flour-2.jpg" alt="" /></div>
+          <div><img src="assets/images/stock/wheat-golden.jpg" alt="" /></div>
+          <div><img src="assets/images/stock/wheat-field.jpg" alt="" /></div>
         </div>
       </div>
 
       <div class="pdp-info reveal">
-        <p class="crumb"><a href="shop.html">Shop</a> · Flours · Wheat</p>
-        <h1>Khapli Wheat Atta</h1>
-        <p class="tag-line">An old grain, brought home.</p>
+        <p class="crumb"><a href="shop.html">Shop</a> · Flour · Wheat</p>
+        <h1>Organic Gehun Atta</h1>
+        <p class="tag-line">Whole wheat, the way it should be.</p>
 
         <p style="color: var(--ink-soft); margin-bottom: 1rem;">
-          Khapli, also known as emmer wheat, is one of the oldest cultivated grains on the subcontinent. We source ours from small farms in Madhya Pradesh and cold-mill in granite chakkis, slowly enough that the bran, the germ and the gentle nuttiness all stay intact.
+          Organic Gehun Atta — whole wheat flour cold-milled the slow way. Sourced from small farms growing without pesticides or chemical fertilisers, ground in granite chakkis so the bran, the germ and the gentle nuttiness all stay intact.
         </p>
 
         <div class="price-row">
-          <span class="price">₹320</span>
+          <span class="price">₹180</span>
           <span class="rating"><span class="stars">★★★★★</span> 4.9 · 412 reviews</span>
         </div>
 
         <div class="option-row">
           <label>Pack Size</label>
           <div class="options">
-            <button>500g · ₹180</button>
-            <button class="active">1kg · ₹320</button>
-            <button>2kg · ₹600</button>
-            <button>5kg · ₹1,420</button>
+            <button>500g · ₹100</button>
+            <button class="active">1kg · ₹180</button>
+            <button>2kg · ₹340</button>
+            <button>5kg · ₹820</button>
           </div>
         </div>
 
@@ -101,7 +128,7 @@
             <input type="number" value="1" min="1" />
             <button class="plus-btn" aria-label="Increase">+</button>
           </div>
-          <button class="btn btn-primary add-to-cart">Add to Cart · ₹272 <span class="arrow">→</span></button>
+          <button class="btn btn-primary add-to-cart">Add to Cart · ₹153 <span class="arrow">→</span></button>
         </div>
 
         <div class="pdp-trust">
@@ -183,20 +210,20 @@
 
       <div class="product-grid">
         <a href="product.html" class="product-card reveal">
-          <div class="media"><div class="img-placeholder">A2 Bilona Ghee</div><div class="quick">Quick Add</div></div>
-          <div class="info"><span class="name">A2 Bilona Ghee</span><span class="meta">Cultured · 500ml</span><span class="price">₹920</span></div>
+          <div class="media"><img src="assets/images/products/jowar.jpg" alt="Organic Jowar Atta" loading="lazy" /><div class="quick">Quick Add</div></div>
+          <div class="info"><span class="name">Organic Jowar Atta</span><span class="meta">Whole Sorghum Flour · 1kg</span><span class="price">₹220</span></div>
         </a>
         <a href="product.html" class="product-card reveal">
-          <div class="media"><div class="img-placeholder">Rock Salt</div><div class="quick">Quick Add</div></div>
-          <div class="info"><span class="name">Pink Himalayan Salt</span><span class="meta">Hand-mined · 500g</span><span class="price">₹140</span></div>
+          <div class="media"><img src="assets/images/products/pink-salt.jpg" alt="Himalayan Sendha Namak" loading="lazy" /><div class="quick">Quick Add</div></div>
+          <div class="info"><span class="name">Himalayan Sendha Namak</span><span class="meta">Pink Rock Salt · 500g</span><span class="price">₹140</span></div>
         </a>
         <a href="product.html" class="product-card reveal">
-          <div class="media"><div class="img-placeholder">Jowar Atta · 1kg</div><div class="quick">Quick Add</div></div>
-          <div class="info"><span class="name">Jowar Atta</span><span class="meta">Bhakri base · 1kg</span><span class="price">₹240</span></div>
+          <div class="media"><img src="assets/images/products/cumin.jpg" alt="Organic Jeera Dana" loading="lazy" /><div class="quick">Quick Add</div></div>
+          <div class="info"><span class="name">Organic Jeera Dana</span><span class="meta">Cumin Seeds · 200g</span><span class="price">₹180</span></div>
         </a>
         <a href="product.html" class="product-card reveal">
-          <div class="media"><div class="img-placeholder">Cold Pressed Mustard Oil</div><div class="quick">Quick Add</div></div>
-          <div class="info"><span class="name">Kachi Ghani Mustard Oil</span><span class="meta">Wood pressed · 1L</span><span class="price">₹480</span></div>
+          <div class="media"><img src="assets/images/products/moong-yellow.jpg" alt="Organic Moong Mogar Dal" loading="lazy" /><div class="quick">Quick Add</div></div>
+          <div class="info"><span class="name">Organic Moong Mogar Dal</span><span class="meta">Yellow Split Gram · 500g</span><span class="price">₹180</span></div>
         </a>
       </div>
     </div>

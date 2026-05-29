@@ -12,36 +12,51 @@
 </head>
 <body class="theme-rust">
 
-  <div class="top-bar">
-    Free shipping across India on orders above ₹999 · <a href="subscribe.html">Auto-deliver and save 15%</a>
-  </div>
-
   <header class="site-header">
-    <nav class="nav">
-      <ul class="nav-links left">
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="bundles.html">Build a Box</a></li>
-        <li><a href="subscribe.html">Subscribe</a></li>
-      </ul>
-      <a href="index.html" class="logo">
-        Chakki Ghar
-        <span class="sub deva">चक्की घर</span>
-      </a>
-      <ul class="nav-links right">
-        <li><a href="story.html">Story</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="locator.html">Find Us</a></li>
-        <li>
-          <button class="icon-btn" aria-label="Open cart">
-            <span class="nav-text">Cart</span>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="index.html" class="logo logo-image"><img src="assets/images/logo.png" alt="Chakki Ghar" /></a>
+      <ul class="nav-links">
+        <li class="nav-icon-item">
+          <button class="icon-btn search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </li>
+        <li class="nav-text-item"><a href="shop.html">Categories</a></li>
+        <li class="nav-text-item"><a href="shop.html">Shop</a></li>
+        <li class="nav-text-item"><a href="bundles.html">Build a Box</a></li>
+        <li class="nav-text-item"><a href="subscribe.html">Subscription</a></li>
+        <li class="nav-text-item"><a href="story.html">About Us</a></li>
+        <li class="nav-text-item"><a href="locator.html">Find Us</a></li>
+        <li class="nav-icon-item">
+          <button class="icon-btn cart-btn" aria-label="Open cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             <span class="cart-count">0</span>
           </button>
         </li>
-        <li>
-          <button class="mobile-toggle" aria-label="Open menu" id="menuToggle">
+        <li class="nav-icon-item nav-mobile-toggle">
+          <button class="mobile-toggle" id="menuToggle" aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </li>
+      </ul>
+    </nav>
+    <nav class="nav-categories" aria-label="Product categories">
+      <ul class="category-strip">
+        <li><a href="shop.html?cat=pulses">Pulses</a></li>
+        <li><a href="shop.html?cat=millet">Millet</a></li>
+        <li><a href="shop.html?cat=rice-wheat">Rice &amp; Wheat</a></li>
+        <li><a href="shop.html?cat=garam-masala">Garam Masala</a></li>
+        <li><a href="shop.html?cat=sweetener-salt">Sweetener &amp; Salt</a></li>
+        <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+        <li><a href="shop.html?cat=seeds">Seeds</a></li>
+        <li><a href="shop.html?cat=extras">Extras</a></li>
+        <li><a href="shop.html?cat=cereal-pulses">Cereal &amp; Pulses</a></li>
+        <li><a href="shop.html?cat=millets">Millets</a></li>
+        <li><a href="shop.html?cat=rock-black-salt">Rock / Black Salt</a></li>
+        <li><a href="shop.html?cat=spices">Spices</a></li>
+        <li><a href="shop.html?cat=healthy-seeds">Healthy Seeds</a></li>
+        <li><a href="shop.html?cat=basil-sabja">Basil / Sabja Seeds</a></li>
+        <li><a href="shop.html?cat=dry-fruit-nuts">Dry Fruit Nuts</a></li>
       </ul>
     </nav>
   </header>
@@ -59,8 +74,8 @@
   <!-- HERO — full-bleed video with centred editorial text -->
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="">
-      <source src="assets/videos/flour-dough.mp4" type="video/quicktime" />
-      <source src="assets/videos/flour-dough.mp4" type="video/mp4" />
+      <source src="assets/videos/flour-dough.mov" type="video/quicktime" />
+      <source src="assets/videos/flour-dough.mov" type="video/mp4" />
     </video>
     <div class="hero-vignette"></div>
 
@@ -81,76 +96,25 @@
     </div>
   </section>
 
-  <!-- Hero stats strip -->
-  <div class="hero-stats-strip">
-    <div class="container">
-      <div class="hero-stats reveal">
-        <div><strong>12+</strong><span>Heritage Grains</span></div>
-        <div><strong>Cold</strong><span>Stone Milled</span></div>
-        <div><strong>Zero</strong><span>Preservatives</span></div>
-        <div><strong>FSSAI</strong><span>Certified Sources</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
+  <!-- FEATURE TICKER — Key product takeaways -->
+  <div class="marquee marquee-features" aria-hidden="true">
     <div class="marquee-track">
-      <span>Khapli Wheat</span> <span class="dot">·</span>
-      <span>Bajra</span> <span class="dot">·</span>
-      <span>Ragi</span> <span class="dot">·</span>
-      <span>Jowar</span> <span class="dot">·</span>
-      <span>Kuttu</span> <span class="dot">·</span>
-      <span>Singhara</span> <span class="dot">·</span>
-      <span>Foxtail Millet</span> <span class="dot">·</span>
-      <span>Kodo</span> <span class="dot">·</span>
-      <span>Amaranth</span> <span class="dot">·</span>
-      <span>Black Rice</span> <span class="dot">·</span>
-      <span>Khapli Wheat</span> <span class="dot">·</span>
-      <span>Bajra</span> <span class="dot">·</span>
-      <span>Ragi</span> <span class="dot">·</span>
-      <span>Jowar</span> <span class="dot">·</span>
-      <span>Kuttu</span> <span class="dot">·</span>
-      <span>Singhara</span> <span class="dot">·</span>
-      <span>Foxtail Millet</span> <span class="dot">·</span>
-      <span>Kodo</span> <span class="dot">·</span>
-      <span>Amaranth</span> <span class="dot">·</span>
-      <span>Black Rice</span> <span class="dot">·</span>
+      <span>100% Organic</span> <span class="dot">|</span>
+      <span>Stoneground</span> <span class="dot">|</span>
+      <span>Low Glycemic Index</span> <span class="dot">|</span>
+      <span>Rich in Protein</span> <span class="dot">|</span>
+      <span>No Maida Added</span> <span class="dot">|</span>
+      <span>High Fibre</span> <span class="dot">|</span>
+      <span>No Additives, No Preservatives</span> <span class="dot">|</span>
+      <span>100% Organic</span> <span class="dot">|</span>
+      <span>Stoneground</span> <span class="dot">|</span>
+      <span>Low Glycemic Index</span> <span class="dot">|</span>
+      <span>Rich in Protein</span> <span class="dot">|</span>
+      <span>No Maida Added</span> <span class="dot">|</span>
+      <span>High Fibre</span> <span class="dot">|</span>
+      <span>No Additives, No Preservatives</span> <span class="dot">|</span>
     </div>
   </div>
-
-  <!-- PILLARS -->
-  <section class="section section-tile-rust">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">Why slow milled</span>
-          <h2>The old way was right, all along.</h2>
-        </div>
-        <p class="lede">
-          Industrial mills crush grain at high heat, stripping it of fibre, oils and quietly, of memory. The chakki keeps it whole. So do we.
-        </p>
-      </div>
-
-      <div class="pillars">
-        <div class="pillar reveal">
-          <span class="num">01</span>
-          <h3>Cold stone milling, the way it was.</h3>
-          <p>Granite chakkis turn slowly, milling at temperatures low enough to keep the bran, the germ and the goodness intact. Nothing is bleached, refined or rushed.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="num">02</span>
-          <h3>Whole grains, deeply nourishing.</h3>
-          <p>Higher fibre, real protein, slow-release energy. The fats and minerals modern flour quietly leaves behind, ours keeps in.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="num">03</span>
-          <h3>Sourced from the people who grow it.</h3>
-          <p>Khapli from Madhya Pradesh, bajra from Rajasthan, ragi from Karnataka. We pay the farmer first, and tell you their name on the back of the bag.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- FEATURED PRODUCTS -->
   <section class="section section-white">
@@ -168,99 +132,124 @@
       <div class="product-grid">
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Khapli Atta · 1kg<br />warm wheat tones</div>
+            <img src="assets/images/products/wheat-flour.jpg" alt="Organic Gehun Atta" loading="lazy" />
             <div class="badge">Best Seller</div>
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">Khapli Wheat Atta</span>
-            <span class="meta">Stone milled · 1kg pack</span>
-            <span class="price">₹320</span>
-          </div>
-        </a>
-        <a href="product.html" class="product-card reveal">
-          <div class="media">
-            <div class="img-placeholder">Bajra Flour · 500g<br />slate grey, soft grain</div>
-            <div class="quick">Quick Add</div>
-          </div>
-          <div class="info">
-            <span class="name">Bajra Flour</span>
-            <span class="meta">Sourced from Bikaner · 500g</span>
+            <span class="name">Organic Gehun Atta</span>
+            <span class="meta">Whole Wheat Flour · 1kg</span>
             <span class="price">₹180</span>
           </div>
         </a>
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Ragi Mudde Atta · 1kg<br />finger millet, dark</div>
-            <div class="badge">New</div>
+            <img src="assets/images/products/jowar.jpg" alt="Organic Jowar Atta" loading="lazy" />
+            
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">Ragi (Finger Millet) Atta</span>
-            <span class="meta">From the Deccan · 1kg</span>
-            <span class="price">₹260</span>
-          </div>
-        </a>
-        <a href="product.html" class="product-card reveal">
-          <div class="media">
-            <div class="img-placeholder">Foxtail Millet · 500g<br />pale gold, whole</div>
-            <div class="quick">Quick Add</div>
-          </div>
-          <div class="info">
-            <span class="name">Whole Foxtail Millet</span>
-            <span class="meta">Slow-cooked staple · 500g</span>
+            <span class="name">Organic Jowar Atta</span>
+            <span class="meta">Whole Sorghum Flour · 1kg</span>
             <span class="price">₹220</span>
           </div>
         </a>
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Jowar Atta · 1kg<br />creamy ivory</div>
+            <img src="assets/images/products/bajra.jpg" alt="Organic Bajra Atta" loading="lazy" />
+            
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">Jowar Atta</span>
-            <span class="meta">Wholesome bhakri base · 1kg</span>
-            <span class="price">₹240</span>
+            <span class="name">Organic Bajra Atta</span>
+            <span class="meta">Pearl Millet Flour · 1kg</span>
+            <span class="price">₹200</span>
           </div>
         </a>
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Kuttu Atta · 500g<br />vrat-friendly</div>
+            <img src="assets/images/products/buckwheat.jpg" alt="Organic Kuttu" loading="lazy" />
             <div class="badge">Vrat</div>
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">Kuttu (Buckwheat) Atta</span>
-            <span class="meta">For fasting days · 500g</span>
-            <span class="price">₹290</span>
+            <span class="name">Organic Kuttu</span>
+            <span class="meta">Whole Buckwheat · 500g</span>
+            <span class="price">₹320</span>
           </div>
         </a>
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Multigrain · 1kg<br />house blend</div>
+            <img src="assets/images/products/kala-chana.jpg" alt="Organic Kala Chana" loading="lazy" />
+            
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">Chakki Ghar House Multigrain</span>
-            <span class="meta">7 grains, no maida · 1kg</span>
-            <span class="price">₹360</span>
+            <span class="name">Organic Kala Chana</span>
+            <span class="meta">Black Chickpeas · 500g</span>
+            <span class="price">₹160</span>
           </div>
         </a>
         <a href="product.html" class="product-card reveal">
           <div class="media">
-            <div class="img-placeholder">Cold Pressed Ghee<br />honeyed, fragrant</div>
+            <img src="assets/images/products/rajma.jpg" alt="Organic Lal Rajma" loading="lazy" />
+            
             <div class="quick">Quick Add</div>
           </div>
           <div class="info">
-            <span class="name">A2 Bilona Ghee</span>
-            <span class="meta">Cultured the old way · 500ml</span>
-            <span class="price">₹920</span>
+            <span class="name">Organic Lal Rajma</span>
+            <span class="meta">Red Kidney Beans · 500g</span>
+            <span class="price">₹280</span>
+          </div>
+        </a>
+        <a href="product.html" class="product-card reveal">
+          <div class="media">
+            <img src="assets/images/products/moong-green.jpg" alt="Organic Sabut Moong Dal" loading="lazy" />
+            
+            <div class="quick">Quick Add</div>
+          </div>
+          <div class="info">
+            <span class="name">Organic Sabut Moong Dal</span>
+            <span class="meta">Whole Green Gram · 500g</span>
+            <span class="price">₹160</span>
+          </div>
+        </a>
+        <a href="product.html" class="product-card reveal">
+          <div class="media">
+            <img src="assets/images/products/moong-yellow.jpg" alt="Organic Moong Mogar Dal" loading="lazy" />
+            
+            <div class="quick">Quick Add</div>
+          </div>
+          <div class="info">
+            <span class="name">Organic Moong Mogar Dal</span>
+            <span class="meta">Yellow Split Gram · 500g</span>
+            <span class="price">₹180</span>
           </div>
         </a>
       </div>
 
       <div style="text-align: center; margin-top: clamp(2rem, 5vw, 3.5rem);" class="reveal">
         <a href="shop.html" class="btn btn-outline">Shop the Full Pantry <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT PROMO — Subscribe | Build a Box, side-by-side -->
+  <section class="section-tight section-teal">
+    <div class="container">
+      <div class="split-promo">
+        <a href="subscribe.html" class="split-promo-card subscribe reveal">
+          <span class="eyebrow">Auto-Deliver</span>
+          <h3>A pantry that <em>never runs out</em>.</h3>
+          <p>Pick your flours, pick your frequency. Skip, pause or swap any time. 15% off every box.</p>
+          <span class="btn btn-marigold">Start a Subscription <span class="arrow">→</span></span>
+        </a>
+        <a href="bundles.html" class="split-promo-card bundle reveal">
+          <span class="eyebrow">Build a Box</span>
+          <h3>Curate your <em>own pantry</em>.</h3>
+          <p>Six flours, one box, hand-picked by you. Save 15% the moment you hit six.</p>
+          <span class="btn btn-marigold">Build a Box <span class="arrow">→</span></span>
+        </a>
       </div>
     </div>
   </section>
@@ -293,38 +282,34 @@
     </div>
   </section>
 
-  <!-- CTA STRIP -->
-  <section class="section-tight section-tile-saffron">
+  <!-- WHY STONE MILLED — Pillars -->
+  <section class="section section-tile-rust">
     <div class="container">
-      <div class="cta-strip reveal">
-        <div class="cta-content">
-          <span class="eyebrow" style="color: var(--turmeric);">Auto-Deliver</span>
-          <h2>A pantry that <em>never runs out</em>.</h2>
-          <p>
-            Pick your flours, pick your frequency, and let us do the math. Skip, pause or swap any time. Milled the morning we ship, and free shipping every box.
-          </p>
-          <ul class="cta-chips">
-            <li>15% off every box</li>
-            <li>Free shipping, always</li>
-            <li>Skip or pause any time</li>
-            <li>Milled on dispatch day</li>
-          </ul>
-          <div class="actions">
-            <a href="subscribe.html" class="btn btn-primary">Start a Subscription <span class="arrow">→</span></a>
-            <a href="bundles.html" class="btn btn-outline">Build a One-Time Box</a>
-          </div>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Why stone milled</span>
+          <h2>The old way was right, all along.</h2>
         </div>
-        <div class="cta-visual">
-          <img src="assets/images/stock/spices-flatlay.jpg" alt="A monthly pantry box of stone-milled flours and spices" />
-          <div class="cta-pricetag">
-            <span class="cta-pricetag-lead">From</span>
-            <strong>₹1,449</strong>
-            <span class="cta-pricetag-trail">/ month</span>
-          </div>
-          <div class="cta-stamp">
-            <span class="deva">सदस्यता</span>
-            <span>Member Pantry</span>
-          </div>
+        <p class="lede">
+          Industrial mills crush grain at high heat, stripping it of fibre, oils and quietly, of memory. The chakki keeps it whole. So do we.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar reveal">
+          <span class="num">01</span>
+          <h3>Cold stone milling, the way it was.</h3>
+          <p>Granite chakkis turn slowly, milling at temperatures low enough to keep the bran, the germ and the goodness intact. Nothing is bleached, refined or rushed.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="num">02</span>
+          <h3>Whole grains, deeply nourishing.</h3>
+          <p>Higher fibre, real protein, slow-release energy. The fats and minerals modern flour quietly leaves behind, ours keeps in.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="num">03</span>
+          <h3>Sourced from the people who grow it.</h3>
+          <p>Khapli from Madhya Pradesh, bajra from Rajasthan, ragi from Karnataka. We pay the farmer first, and tell you their name on the back of the bag.</p>
         </div>
       </div>
     </div>
@@ -383,63 +368,91 @@
     </div>
   </section>
 
-  <!-- JOURNAL -->
+  <!-- WATCH AND SHOP — UGC video grid -->
   <section class="section section-cream">
     <div class="container">
       <div class="section-head reveal">
         <div>
-          <span class="eyebrow">The Journal</span>
-          <h2>Notes from the chakki.</h2>
+          <span class="eyebrow">Watch & Shop</span>
+          <h2>From real kitchens, real cooks.</h2>
         </div>
         <p class="lede">
-          Recipes, kitchen lore, farmer profiles and the occasional opinion. Read slowly, ideally with chai.
+          A pinch of context, a window into what people are cooking with our flours. Tap a video to shop the look.
         </p>
       </div>
 
-      <div class="journal-grid">
-        <a href="journal.html" class="j-card feature reveal">
-          <div class="media">
-            <img src="assets/images/stock/roti-tawa.jpg" alt="Freshly cooked roti on a traditional pan" />
+      <div class="watch-shop-grid">
+        <a href="product.html" class="watch-shop-card reveal">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/traditional-bread.mp4" type="video/mp4" />
+          </video>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <div class="watch-shop-overlay">
+            <div class="watch-shop-product">
+              <img src="assets/images/stock/wheat-golden.jpg" alt="Khapli Wheat Atta" />
+              <div class="info">
+                <strong>Khapli Wheat Atta</strong>
+                <span>1kg · ₹320</span>
+              </div>
+              <span class="shop-link">Shop →</span>
+            </div>
           </div>
-          <span class="tag">Recipe</span>
-          <h3>The case for the bhakri, and a recipe that finally works.</h3>
-          <p>Jowar and bajra make the most honest breads in the country. Here is the technique we settled on after a year of failed attempts.</p>
-          <span class="read-more">Read · 6 min</span>
         </a>
-        <a href="journal.html" class="j-card reveal">
-          <div class="media">
-            <img src="assets/images/stock/millet-stalks.jpg" alt="Bajra millet stalks in a field" />
+
+        <a href="product.html" class="watch-shop-card reveal">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/coriander-powder.mp4" type="video/mp4" />
+          </video>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <div class="watch-shop-overlay">
+            <div class="watch-shop-product">
+              <img src="assets/images/stock/spices-bowls.jpg" alt="Peanut Chatni Pudi" />
+              <div class="info">
+                <strong>Peanut Chatni Pudi</strong>
+                <span>200g · ₹240</span>
+              </div>
+              <span class="shop-link">Shop →</span>
+            </div>
           </div>
-          <span class="tag">Farmer Profile</span>
-          <h3>Rajaram of Bikaner, and the bajra that started it all.</h3>
-          <span class="read-more">Read · 4 min</span>
         </a>
-        <a href="journal.html" class="j-card reveal">
-          <div class="media">
-            <img src="assets/images/stock/pantry-jars.jpg" alt="Glass jars of grains on a pantry shelf" />
+
+        <a href="product.html" class="watch-shop-card reveal">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/pestle-mortar.mp4" type="video/mp4" />
+          </video>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <div class="watch-shop-overlay">
+            <div class="watch-shop-product">
+              <img src="assets/images/stock/millet-stalks.jpg" alt="Sajji Flour" />
+              <div class="info">
+                <strong>Sajji (Bajra) Flour</strong>
+                <span>500g · ₹180</span>
+              </div>
+              <span class="shop-link">Shop →</span>
+            </div>
           </div>
-          <span class="tag">Pantry</span>
-          <h3>How to store stone-milled flour so it actually stays fresh.</h3>
-          <span class="read-more">Read · 3 min</span>
+        </a>
+
+        <a href="product.html" class="watch-shop-card reveal">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/seasoning-fingertips.mp4" type="video/mp4" />
+          </video>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <div class="watch-shop-overlay">
+            <div class="watch-shop-product">
+              <img src="assets/images/stock/spices-flatlay.jpg" alt="Gud Masala" />
+              <div class="info">
+                <strong>Gud Masala</strong>
+                <span>100g · ₹180</span>
+              </div>
+              <span class="shop-link">Shop →</span>
+            </div>
+          </div>
         </a>
       </div>
 
       <div style="text-align: center; margin-top: clamp(2rem, 5vw, 3.5rem);" class="reveal">
-        <a href="journal.html" class="btn btn-outline">Explore the Journal <span class="arrow">→</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRESS -->
-  <section class="section-tight section-olive-deep">
-    <div class="container">
-      <div class="press reveal">
-        <span class="label">As Featured In</span>
-        <span class="name">Vogue India</span>
-        <span class="name">Condé Nast Traveller</span>
-        <span class="name">Mint Lounge</span>
-        <span class="name">Goya Journal</span>
-        <span class="name">Architectural Digest</span>
+        <a href="#" class="btn btn-outline">View All on Instagram <span class="arrow">→</span></a>
       </div>
     </div>
   </section>

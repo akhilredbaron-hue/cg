@@ -12,32 +12,51 @@
 </head>
 <body>
 
-  <div class="top-bar">
-    Free shipping across India on orders above ₹999 · <a href="subscribe.html">Auto-deliver and save 15%</a>
-  </div>
-
   <header class="site-header">
-    <nav class="nav">
-      <ul class="nav-links left">
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="bundles.html">Build a Box</a></li>
-        <li><a href="subscribe.html">Subscribe</a></li>
-      </ul>
-      <a href="index.html" class="logo">
-        Chakki Ghar
-        <span class="sub deva">चक्की घर</span>
-      </a>
-      <ul class="nav-links right">
-        <li><a href="story.html">Story</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="locator.html">Find Us</a></li>
-        <li>
-          <button class="icon-btn">
-            <span class="nav-text">Cart</span>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="index.html" class="logo logo-image"><img src="assets/images/logo.png" alt="Chakki Ghar" /></a>
+      <ul class="nav-links">
+        <li class="nav-icon-item">
+          <button class="icon-btn search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </li>
+        <li class="nav-text-item"><a href="shop.html">Categories</a></li>
+        <li class="nav-text-item"><a href="shop.html">Shop</a></li>
+        <li class="nav-text-item"><a href="bundles.html">Build a Box</a></li>
+        <li class="nav-text-item"><a href="subscribe.html">Subscription</a></li>
+        <li class="nav-text-item"><a href="story.html">About Us</a></li>
+        <li class="nav-text-item"><a href="locator.html">Find Us</a></li>
+        <li class="nav-icon-item">
+          <button class="icon-btn cart-btn" aria-label="Open cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             <span class="cart-count">0</span>
           </button>
         </li>
-        <li><button class="mobile-toggle" id="menuToggle"><span></span><span></span><span></span></button></li>
+        <li class="nav-icon-item nav-mobile-toggle">
+          <button class="mobile-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav-categories" aria-label="Product categories">
+      <ul class="category-strip">
+        <li><a href="shop.html?cat=pulses">Pulses</a></li>
+        <li><a href="shop.html?cat=millet">Millet</a></li>
+        <li><a href="shop.html?cat=rice-wheat">Rice &amp; Wheat</a></li>
+        <li><a href="shop.html?cat=garam-masala">Garam Masala</a></li>
+        <li><a href="shop.html?cat=sweetener-salt">Sweetener &amp; Salt</a></li>
+        <li><a href="shop.html?cat=dry-fruits">Dry Fruits</a></li>
+        <li><a href="shop.html?cat=seeds">Seeds</a></li>
+        <li><a href="shop.html?cat=extras">Extras</a></li>
+        <li><a href="shop.html?cat=cereal-pulses">Cereal &amp; Pulses</a></li>
+        <li><a href="shop.html?cat=millets">Millets</a></li>
+        <li><a href="shop.html?cat=rock-black-salt">Rock / Black Salt</a></li>
+        <li><a href="shop.html?cat=spices">Spices</a></li>
+        <li><a href="shop.html?cat=healthy-seeds">Healthy Seeds</a></li>
+        <li><a href="shop.html?cat=basil-sabja">Basil / Sabja Seeds</a></li>
+        <li><a href="shop.html?cat=dry-fruit-nuts">Dry Fruit Nuts</a></li>
       </ul>
     </nav>
   </header>
@@ -52,17 +71,15 @@
     <a href="locator.html">Find Us</a>
   </nav>
 
-  <section class="container">
-    <div class="shop-hero reveal">
-      <div>
-        <span class="eyebrow">The Pantry</span>
-        <h1 style="margin-top: 1rem;">Slow flours, whole grains and a few well-kept secrets.</h1>
-      </div>
-      <p class="lede">
-        Every bag tells you where the grain came from, who grew it, and the date it was milled. The way pantries used to work.
-      </p>
+  <section class="page-banner" style="background-image: url('assets/images/stock/spices-flatlay.jpg');">
+    <div class="page-banner-content">
+      <span class="eyebrow">The Pantry</span>
+      <h1>Shop the Pantry</h1>
+      <p>Slow flours, whole grains and a few well-kept secrets. Every bag stamped with the date it was milled.</p>
     </div>
+  </section>
 
+  <section class="container">
     <div class="shop-layout">
       <aside class="shop-filters">
         <div class="filter-group">
@@ -108,7 +125,7 @@
 
       <div>
         <div class="shop-toolbar reveal">
-          <span>Showing 12 of 48</span>
+          <span>Showing 29 products</span>
           <div class="flex gap-3" style="align-items: center;">
             <span style="color: var(--warm-grey);">Sort by</span>
             <select>
@@ -124,137 +141,350 @@
         <div class="product-grid">
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Khapli Atta · 1kg</div>
+              <img src="assets/images/products/wheat-flour.jpg" alt="Organic Gehun Atta" loading="lazy" />
               <div class="badge">Best Seller</div>
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Khapli Wheat Atta</span>
-              <span class="meta">Stone milled · 1kg pack</span>
-              <span class="price">₹320</span>
-            </div>
-          </a>
-          <a href="product.html" class="product-card reveal">
-            <div class="media">
-              <div class="img-placeholder">Bajra Flour · 500g</div>
-              <div class="quick">Quick Add</div>
-            </div>
-            <div class="info">
-              <span class="name">Bajra Flour</span>
-              <span class="meta">Sourced from Bikaner · 500g</span>
+              <span class="name">Organic Gehun Atta</span>
+              <span class="meta">Whole Wheat Flour · 1kg</span>
               <span class="price">₹180</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Ragi Atta · 1kg</div>
-              <div class="badge">New</div>
+              <img src="assets/images/products/jowar.jpg" alt="Organic Jowar Atta" loading="lazy" />
+              
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Ragi (Finger Millet) Atta</span>
-              <span class="meta">From the Deccan · 1kg</span>
-              <span class="price">₹260</span>
-            </div>
-          </a>
-          <a href="product.html" class="product-card reveal">
-            <div class="media">
-              <div class="img-placeholder">Foxtail Millet · 500g</div>
-              <div class="quick">Quick Add</div>
-            </div>
-            <div class="info">
-              <span class="name">Whole Foxtail Millet</span>
-              <span class="meta">Slow-cooked staple · 500g</span>
+              <span class="name">Organic Jowar Atta</span>
+              <span class="meta">Whole Sorghum Flour · 1kg</span>
               <span class="price">₹220</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Jowar Atta · 1kg</div>
+              <img src="assets/images/products/bajra.jpg" alt="Organic Bajra Atta" loading="lazy" />
+              
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Jowar Atta</span>
-              <span class="meta">Wholesome bhakri base · 1kg</span>
-              <span class="price">₹240</span>
+              <span class="name">Organic Bajra Atta</span>
+              <span class="meta">Pearl Millet Flour · 1kg</span>
+              <span class="price">₹200</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Kuttu Atta · 500g</div>
+              <img src="assets/images/products/buckwheat.jpg" alt="Organic Kuttu" loading="lazy" />
               <div class="badge">Vrat</div>
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Kuttu (Buckwheat) Atta</span>
-              <span class="meta">For fasting days · 500g</span>
-              <span class="price">₹290</span>
+              <span class="name">Organic Kuttu</span>
+              <span class="meta">Whole Buckwheat · 500g</span>
+              <span class="price">₹320</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Multigrain · 1kg</div>
+              <img src="assets/images/products/kala-chana.jpg" alt="Organic Kala Chana" loading="lazy" />
+              
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">House Multigrain Atta</span>
-              <span class="meta">7 grains, no maida · 1kg</span>
-              <span class="price">₹360</span>
-            </div>
-          </a>
-          <a href="product.html" class="product-card reveal">
-            <div class="media">
-              <div class="img-placeholder">A2 Bilona Ghee · 500ml</div>
-              <div class="quick">Quick Add</div>
-            </div>
-            <div class="info">
-              <span class="name">A2 Bilona Ghee</span>
-              <span class="meta">Cultured the old way · 500ml</span>
-              <span class="price">₹920</span>
-            </div>
-          </a>
-          <a href="product.html" class="product-card reveal">
-            <div class="media">
-              <div class="img-placeholder">Black Rice · 500g</div>
-              <div class="quick">Quick Add</div>
-            </div>
-            <div class="info">
-              <span class="name">Manipuri Black Rice</span>
-              <span class="meta">Heirloom · 500g</span>
-              <span class="price">₹420</span>
-            </div>
-          </a>
-          <a href="product.html" class="product-card reveal">
-            <div class="media">
-              <div class="img-placeholder">Kala Chana · 500g</div>
-              <div class="quick">Quick Add</div>
-            </div>
-            <div class="info">
-              <span class="name">Whole Kala Chana</span>
-              <span class="meta">Desi black chickpea · 500g</span>
+              <span class="name">Organic Kala Chana</span>
+              <span class="meta">Black Chickpeas · 500g</span>
               <span class="price">₹160</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Cold Pressed Mustard Oil</div>
+              <img src="assets/images/products/rajma.jpg" alt="Organic Lal Rajma" loading="lazy" />
+              
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Kachi Ghani Mustard Oil</span>
-              <span class="meta">Wood pressed · 1L</span>
+              <span class="name">Organic Lal Rajma</span>
+              <span class="meta">Red Kidney Beans · 500g</span>
+              <span class="price">₹280</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/moong-green.jpg" alt="Organic Sabut Moong Dal" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Sabut Moong Dal</span>
+              <span class="meta">Whole Green Gram · 500g</span>
+              <span class="price">₹160</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/moong-yellow.jpg" alt="Organic Moong Mogar Dal" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Moong Mogar Dal</span>
+              <span class="meta">Yellow Split Gram · 500g</span>
+              <span class="price">₹180</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/urad-dal.jpg" alt="Organic Kali Urad Sabut Dal" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kali Urad Sabut Dal</span>
+              <span class="meta">Whole Black Gram · 500g</span>
+              <span class="price">₹200</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/ragi.jpg" alt="Organic Ragi / Nachni" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Ragi / Nachni</span>
+              <span class="meta">Finger Millet · 500g</span>
+              <span class="price">₹160</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/quinoa.jpg" alt="Organic Kinwa" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kinwa</span>
+              <span class="meta">White Quinoa · 500g</span>
               <span class="price">₹480</span>
             </div>
           </a>
           <a href="product.html" class="product-card reveal">
             <div class="media">
-              <div class="img-placeholder">Hand Pounded Rice · 1kg</div>
+              <img src="assets/images/products/amaranth.jpg" alt="Organic Rajgira Seed" loading="lazy" />
+              
               <div class="quick">Quick Add</div>
             </div>
             <div class="info">
-              <span class="name">Hand-Pounded Sona Masuri</span>
-              <span class="meta">Semi-polished · 1kg</span>
+              <span class="name">Organic Rajgira Seed</span>
+              <span class="meta">Amaranth Seeds · 500g</span>
+              <span class="price">₹220</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/proso-millet.jpg" alt="Organic Korale" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Korale</span>
+              <span class="meta">Browntop Millet · 500g</span>
+              <span class="price">₹260</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/foxtail-millet.jpg" alt="Organic Kangni / Navane" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kangni / Navane</span>
+              <span class="meta">Foxtail Millet · 500g</span>
+              <span class="price">₹240</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/kodo-millet.jpg" alt="Organic Kodra / Harka" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kodra / Harka</span>
+              <span class="meta">Kodo Millet · 500g</span>
+              <span class="price">₹220</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/proso-millet.jpg" alt="Organic Chena" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Chena</span>
+              <span class="meta">Proso Millet · 500g</span>
+              <span class="price">₹230</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/kodo-millet.jpg" alt="Organic Sanwa" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Sanwa</span>
+              <span class="meta">Barnyard Millet · 500g</span>
+              <span class="price">₹250</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/foxtail-millet.jpg" alt="Organic Kutki / Saamai" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kutki / Saamai</span>
+              <span class="meta">Little Millet · 500g</span>
+              <span class="price">₹240</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/pink-salt.jpg" alt="Himalayan Sendha Namak" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Himalayan Sendha Namak</span>
+              <span class="meta">Himalayan Pink Rock Salt · 500g</span>
+              <span class="price">₹140</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/pink-salt-2.jpg" alt="Sendha Namak" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Sendha Namak</span>
+              <span class="meta">Pink Rock Salt · 500g</span>
+              <span class="price">₹120</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/coriander.jpg" alt="Organic Sabut Dhania" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Sabut Dhania</span>
+              <span class="meta">Coriander Whole · 200g</span>
+              <span class="price">₹140</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/cumin.jpg" alt="Organic Jeera Dana" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Jeera Dana</span>
+              <span class="meta">Cumin Seeds · 200g</span>
+              <span class="price">₹180</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/hing.jpg" alt="Organic Hing" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Hing</span>
+              <span class="meta">Asafoetida Powder · 50g</span>
+              <span class="price">₹420</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/methi.jpg" alt="Organic Methi Dana" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Methi Dana</span>
+              <span class="meta">Fenugreek Seeds · 200g</span>
+              <span class="price">₹120</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/chia.jpg" alt="Organic Chia Beej" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Chia Beej</span>
+              <span class="meta">Chia Seeds · 200g</span>
               <span class="price">₹280</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/sunflower.jpg" alt="Organic Sunflower Seeds" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Sunflower Seeds</span>
+              <span class="meta">Edible Seeds · 200g</span>
+              <span class="price">₹220</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/sabja.jpg" alt="Organic Sabja" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Sabja</span>
+              <span class="meta">Basil Seeds · 200g</span>
+              <span class="price">₹180</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/almond.jpg" alt="Organic Badam" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Badam</span>
+              <span class="meta">Almonds · 250g</span>
+              <span class="price">₹680</span>
+            </div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="media">
+              <img src="assets/images/products/cashew.jpg" alt="Organic Kaju" loading="lazy" />
+              
+              <div class="quick">Quick Add</div>
+            </div>
+            <div class="info">
+              <span class="name">Organic Kaju</span>
+              <span class="meta">Cashew Nuts W240 · 250g</span>
+              <span class="price">₹720</span>
             </div>
           </a>
         </div>
